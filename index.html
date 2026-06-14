@@ -148,12 +148,8 @@
     .link-item::after{content:"";position:absolute;top:0;bottom:0;left:-30%;width:28%;background:linear-gradient(90deg, transparent, rgba(255,255,255,.2), transparent);transform:skewX(-18deg);opacity:0;pointer-events:none}
     .link-item:hover{transform:translateY(-4px) scale(1.015);background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.24);box-shadow:0 18px 34px rgba(0,0,0,.22)}
     .link-item:hover::after{opacity:1;animation:shine .7s ease forwards}
-    .link-item.facebook:hover{box-shadow:0 18px 34px rgba(24,119,242,.28);border-color:rgba(24,119,242,.45)}
-    .link-item.facebook:hover::before{opacity:1;background:linear-gradient(90deg, rgba(24,119,242,.14), transparent 65%)}
-    .link-item.tiktok:hover{box-shadow:0 18px 34px rgba(255,255,255,.18);border-color:rgba(255,255,255,.3)}
-    .link-item.tiktok:hover::before{opacity:1;background:linear-gradient(90deg, rgba(37,244,238,.12), rgba(254,44,85,.12), transparent 70%)}
-    .link-item.instagram:hover{box-shadow:0 18px 34px rgba(221,42,123,.26);border-color:rgba(221,42,123,.34)}
-    .link-item.instagram:hover::before{opacity:1;background:linear-gradient(90deg, rgba(245,133,41,.16), rgba(221,42,123,.14), rgba(81,91,212,.14), transparent 75%)}
+    .link-item.zalo:hover{box-shadow:0 18px 34px rgba(0,104,255,.28);border-color:rgba(0,104,255,.45)}
+    .link-item.zalo:hover::before{opacity:1;background:linear-gradient(90deg, rgba(0,104,255,.14), transparent 65%)}
     .link-item.telegram:hover{box-shadow:0 18px 34px rgba(34,158,217,.28);border-color:rgba(34,158,217,.42)}
     .link-item.telegram:hover::before{opacity:1;background:linear-gradient(90deg, rgba(34,158,217,.18), transparent 70%)}
     .link-item:hover .icon{transform:scale(1.08) rotate(-4deg);box-shadow:0 10px 18px rgba(0,0,0,.2)}
@@ -206,7 +202,7 @@
       <div class="topbar-brand">BAO CHAU PROFILE</div>
       <div class="topbar-nav">
   <a class="nav-chip" href="#authSection" onclick="document.getElementById('authSection').scrollIntoView({behavior:'smooth'}); return false;">🔐 Đăng ký / Đăng nhập</a>
-  <a class="nav-chip" href="#socialResources" onclick="document.getElementById('socialResources').scrollIntoView({behavior:'smooth'}); return false;">🌐 Tài nguyên mạng xã hội</a>
+  <a class="nav-chip" href="#socialResources" onclick="document.getElementById('socialResources').scrollIntoView({behavior:'smooth'}); return false;">🌐 Liên hệ Zalo & Telegram</a>
   <a class="nav-chip" href="#codeResources" onclick="document.getElementById('codeResources').scrollIntoView({behavior:'smooth'}); return false;">💻 Code</a>
   <a class="nav-chip" href="#gameResources" onclick="document.getElementById('gameResources').scrollIntoView({behavior:'smooth'}); return false;">🎮 Acc game</a>
   <a class="nav-chip" href="./quiz.html">📝 Trắc nghiệm</a>
@@ -220,46 +216,32 @@
       </div>
     </section>
 
-    <!-- LINKS -->
+    <!-- LINKS: CHỈ GIỮ LẠI ZALO & TELEGRAM -->
     <section class="card section" id="socialResources">
-      <h2>Liên kết & tài nguyên mạng xã hội</h2>
+      <h2>📱 Liên hệ trực tiếp</h2>
       <div class="link-list">
-        <a class="link-item facebook" href="https://www.facebook.com/NHBC.2000?locale=vi_VN" target="_blank" rel="noreferrer">
+        <!-- Zalo link -->
+        <a class="link-item zalo" href="https://zaloapp.com/qr/p/1wota0fm1dbi7" target="_blank" rel="noreferrer">
           <div class="link-left">
-            <div class="icon" style="background:#1877F2">
-              <svg fill="white" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.3v-2.9h2.3V9.6c0-2.3 1.4-3.6 3.5-3.6 1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.4.7-1.4 1.4v1.7h2.5l-.4 2.9h-2.1v7A10 10 0 0 0 22 12"/></svg>
+            <div class="icon" style="background:#0068FF">
+              <svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 13c-2.33 0-4.31-1.46-5.11-3.5h10.22c-.8 2.04-2.78 3.5-5.11 3.5z"/>
+                <path d="M17.5 7.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="white"/>
+                <circle cx="6.5" cy="7.5" r="1.5" fill="white"/>
+              </svg>
             </div>
-            <span class="platform-name">Facebook</span>
+            <span class="platform-name">Zalo (Nhắn trực tiếp)</span>
           </div>
           <span>↗</span>
         </a>
 
-        <a class="link-item tiktok" href="https://www.tiktok.com/@sewvanhac" target="_blank" rel="noreferrer">
-          <div class="link-left">
-            <div class="icon" style="background:#000">
-              <svg fill="white" viewBox="0 0 24 24"><path d="M12 2v14.5a3.5 3.5 0 1 1-3-3.46V10a7 7 0 1 0 6 6.93V8.9a7.9 7.9 0 0 0 4.5 1.4V7.4a5.5 5.5 0 0 1-4.5-2.7V2h-3z"/></svg>
-            </div>
-            <span class="platform-name">TikTok</span>
-          </div>
-          <span>↗</span>
-        </a>
-
-        <a class="link-item instagram" href="https://www.instagram.com/baochau16011/" target="_blank" rel="noreferrer">
-          <div class="link-left">
-            <div class="icon" style="background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4)">
-              <svg fill="white" viewBox="0 0 24 24"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2zm6.2-.7a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2zM12 9a3 3 0 1 0 3 3 3 3 0 0 0-3-3z"/></svg>
-            </div>
-            <span class="platform-name">Instagram</span>
-          </div>
-          <span>↗</span>
-        </a>
-
+        <!-- Telegram link -->
         <a class="link-item telegram" href="https://t.me/mmo2026s" target="_blank" rel="noreferrer">
           <div class="link-left">
             <div class="icon" style="background:#229ED9">
               <svg fill="white" viewBox="0 0 24 24"><path d="M9.04 15.62l-.38 5.33c.54 0 .77-.23 1.05-.5l2.52-2.4 5.22 3.82c.96.53 1.64.25 1.9-.88l3.44-16.1c.33-1.52-.55-2.12-1.48-1.77L1.2 9.4c-1.48.57-1.46 1.4-.25 1.77l5.2 1.62L18.3 6.4c.57-.38 1.1-.17.67.21"/></svg>
             </div>
-            <span class="platform-name">Telegram</span>
+            <span class="platform-name">Telegram @mmo2026s</span>
           </div>
           <span>↗</span>
         </a>
@@ -427,9 +409,6 @@
       loadTrack(currentTrack);
     });
 
-    // will start after user click intro
-  
-
     // HEART CLICK EFFECT
     document.addEventListener('click', function(e){
       const heart = document.createElement('div');
@@ -480,7 +459,6 @@
     window.addEventListener('resize', resize);
 
     function draw(){
-      // fade trail
       ctx.fillStyle = 'rgba(0,0,0,0.08)';
       ctx.fillRect(0,0,w,h);
 
@@ -490,10 +468,8 @@
         const x = i * 16;
         const y = drops[i] * 16;
 
-        // head glow
         ctx.fillStyle = '#baffd9';
         ctx.fillText(text, x, y);
-        // tail
         ctx.fillStyle = '#00ffa6';
         ctx.fillText(text, x, y+1);
 
@@ -504,7 +480,6 @@
     }
     draw();
 
-    // click glitch pulse
     document.addEventListener('click',()=>{
       canvas.style.filter = 'drop-shadow(0 0 18px rgba(0,255,160,.9)) brightness(1.2)';
       setTimeout(()=>{canvas.style.filter='drop-shadow(0 0 6px rgba(0,255,160,.35))'},180);
